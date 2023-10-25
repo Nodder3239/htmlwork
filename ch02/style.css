@@ -1,0 +1,16 @@
+h1{color: #b84417;}
+h2{font-family: "궁서체";}
+p{
+    font-family: "바탕";
+    line-height: 2;
+}
+span{
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+}
+a{
+    font-size: 20px;
+    text-decoration: none;
+    color:black;
+}
