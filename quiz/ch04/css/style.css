@@ -1,0 +1,33 @@
+body{
+    background-color: #02233b;
+    margin: 0px;
+}
+#container{
+    border: 1px dotted #ccc;
+    width: 600px;
+    height: 700px;
+    background: white url('../../image/mic.png') no-repeat right bottom;
+    margin: 0px auto;
+    padding: 20px 20px;
+}
+h1{
+    background-color: #004344;
+    color:white;
+    text-align: center;
+    margin: 0px;
+    padding: 20px;
+}
+h2{
+    text-align: center;
+}
+h3{
+    color: rgb(194, 78, 0);
+}
+ul{
+    /* ul태그에 padding-left 40px 적용됨 */
+    margin:20px;
+    list-style-type:none;
+}
+li{
+    line-height: 30px;
+}
