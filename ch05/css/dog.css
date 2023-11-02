@@ -1,4 +1,6 @@
 /* float-navbar.html에 연결 */
+/* 웹 폰트 임포트 경로는 맨 위에 위치시킴 */
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap");
 *{
     margin: 0;
     padding: 0;
@@ -22,6 +24,8 @@ header #logo{
     color: greenyellow;
     padding-left: 20px;
     font-style: italic;
+    font-family: Nanum Pen Script;
+    font-size: 50px;
 }
 header nav{
     width:70%;
@@ -33,6 +37,7 @@ nav ul{
 }
 nav ul li{
     float: right;
+    /* display: inline-block; */
     margin: 0 20px;
     line-height: 80px;  /* 수직 정렬 - 가운데 */
 }

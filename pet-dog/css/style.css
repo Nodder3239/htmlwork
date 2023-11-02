@@ -1,4 +1,5 @@
 /* index.html에 연결 */
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap");
 *{
     margin: 0;
     padding: 0;
@@ -12,6 +13,18 @@ header{
     background-color: #004c00;
     padding: 10px;
 }
+header #logo{
+    width: 25%;
+    float: left;
+    line-height: 60px;
+}
+#logo h1{
+    color: greenyellow;
+    padding-left: 16px;
+    font-style: italic;
+    font-family: Nanum Pen Script;
+    font-size: 50px;
+}
 header nav{
     width: 70%;     /* header 크기의 70% */
     float: right;
@@ -20,12 +33,20 @@ header nav{
 nav ul li{
     display: inline-block;
     line-height: 60px;
-
+    margin: 0 20px;
     list-style: none;
 }
-ul li a{
+/* ul li a{
     color: #fff;
     text-decoration: none;
+} */
+/* 링크되거나 방문한 속성을 바꿈 */
+ul li a:link, a:visited{
+    color: white;
+    text-decoration: none;
+}
+ul li a:hover{
+    color: yellowgreen;
 }
 main{
     height: 600px;
@@ -56,8 +77,13 @@ section dl dd{
 }
 aside{
     clear: both;
-    padding: 10px;
+    padding: 40px 20px;
     background: greenyellow;
+}
+aside img{
+    float: left;
+    margin: 10px 100px 10px 30px;
+    size: ;
 }
 aside h3{
     padding-left: 30px;
