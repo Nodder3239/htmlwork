@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>word-wrap 속성</title>
+  <style>
+    ul{
+      width: 200px;
+      border: 1px solid #ccc;
+    }
+    ul li{
+      margin: 10px 0px;
+      /* 영어 단어를 줄바꿈(알파벳 철자) */
+      word-wrap: break-word;
+      /* word-break: break-word; */
+      /* 영어 단어를 줄바꿈(단어 기준) */
+      /* word-break: break-all; */
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li>이름 : 이상현</li>
+    <li>이메일 : abcabcabcabcabc@lycos.co.kr</li>
+    <li>주소 : 서울시 영등포구 선유동1로 이레빌딩 19층</li>
+  </ul>
+</body>
+</html>
