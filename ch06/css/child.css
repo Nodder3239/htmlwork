@@ -15,7 +15,7 @@
 }
 /* 모든 자식 요소 중 n번째 자식 요소 */
 /* n=0 대입 */
-.contents :nth-child(2n){
+.contents :nth-child(2n){ /* 2, 4, 6, 8, ...*/
   background-color: #ff0;
 }
 /* 모든 자식 요소 중 마지막 자식 요소 */

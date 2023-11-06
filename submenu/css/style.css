@@ -1,0 +1,31 @@
+/* index.html의 스타일 */
+/* 공통 스타일(common) */
+/* import는 맨 위에 넣을 것 */
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Nanum+Pen+Script&display=swap");
+*{margin: 0; padding: 0;}
+a{text-decoration: none;}
+ul{list-style: none;}
+#wrap{width: 1200px; margin: 0 auto;}
+
+/* header 메뉴 */
+header{width: 100%; height: 100px; background: #0077cc;}
+#logo{float: left; width:250px; line-height: 100px;}
+#logo h1{
+  padding-left: 20px; color: greenyellow; 
+  font-style: italic; font-family: Nanum Gothic Coding;
+}
+header nav{float: right; width: 900px; padding-top: 40px;}
+
+/* 주메뉴 */
+#TopMenu{height: 60px; margin-left: 100px;}
+#TopMenu > li{float: left; position: relative;}
+#TopMenu > li > a {display: block; color: #fff; padding: 20px 40px;}
+#TopMenu > li > a:hover{color:#000;}
+/* 서브메뉴 */
+#TopMenu > li > ul{display: none; position: absolute; width: 160px;
+  background: rgba(250, 250, 54, 0.6); 
+}
+#TopMenu > li:hover > ul{display:block; z-index:10;}
+#TopMenu > li > ul > li{padding: 3px 0 8px 36px;}
+#TopMenu > li > ul > li > a{font-size: 15px; color: #000}
+#TopMenu > li > ul > li > a:hover{color: #f00;}
