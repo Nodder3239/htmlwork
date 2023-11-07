@@ -28,37 +28,55 @@ header nav{float: right; width: 900px; padding-top: 40px;}
 #TopMenu > li > ul > li{padding: 3px 0 8px 36px;}
 #TopMenu > li > ul > li > a{font-size: 15px; color: #000}
 #TopMenu > li > ul > li > a:hover{color: #f00;}
-main{
-    height: 600px;
-    padding: 5px;
-    border: 5px solid #ccc;
+/* index 페이지 스타일 */
+#index{border: 5px solid #ccc}
+#index h1{margin-top: 100px; text-align: center;}
+/* contents 영역 */
+#index #contents{height: 800px; margin-top: 40px;}
+#tabMenu{width: 600px; margin: 0 auto;}
+#tabMenu input[type="radio"]{display: none;}
+#tabMenu label{ display: inline-block;
+  padding: 15px 25px; color: #aaa;
 }
-main h2{
-    margin: 10px 20px;
-    text-align: center;
+#tabMenu label:hover{color: #222; cursor: pointer;}
+#tabMenu input:checked + label{
+  color: #b00; border: 1px solid #aaa; background: #eee;
 }
-.mal1{
-    text-align: center;
+#tabMenu .tabContent{
+  display: none; padding: 20px 0 0 0; border-top: 1px solid #ddd;
 }
-section{
-    width: 31%;     /* main 크기의 31% */
+/* '~' 형제 선택자 모두 선택 */
+#tab1:checked ~ #notice, #tab2:checked ~ #gallery{display: block;}
+
+#tabMenu .tabContent h2{display: none;};
+#notice ul{margin-left: 30p; list-style: square;}
+#notice ul li{line-height: 3; font-size: 15px;}
+#gallery ul li{display: inline;}
+
+/* type 페이지 스타일 */
+#type{height: 800px; border: 5px solid #ccc;}
+#type h2{clear: both; padding: 24px 24px 16px;}
+#type section{
+    float: left;
+    width: 30%;
     height: 520px;
     border: 1px dotted #ccc;
-    float: left;
-    margin: 5px;
+    margin: 0 10px 0 14px;
     padding: 5px;
 }
-section h3{
+
+.mal1{
+    text-align: right;
+}
+
+#type section h3{
     background: url(../images/dot.png) no-repeat;
     background-position: 5px 20px;  /* left(x) top(y) */
     padding: 16px 24px;
 }
-section dl dt{
-    font-weight: bold;
-}
-section dl dd{
-    margin-bottom: 16px;
-}
+section dl{padding: 5px; text-align: justify;}
+section dl dt{font-weight: bold;}
+section dl dd{margin-bottom: 16px;}
 aside{
     clear: both;
     padding: 40px 20px;
@@ -67,7 +85,6 @@ aside{
 aside img{
     float: left;
     margin: 10px 100px 10px 30px;
-    size: ;
 }
 aside h3{
     padding-left: 30px;
