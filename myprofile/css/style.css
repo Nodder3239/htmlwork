@@ -1,11 +1,20 @@
-/* cafe12의 스타일 */
+/* myprofile의 스타일 */
 @charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap");
 /* 공통 스타일 */
 *{margin: 0; padding: 0; box-sizing: border-box;}
+
 /* 모바일 기준 */
 #container{width: 100%;}
 /* header 영역 */
 header{height: 320px;}
+#logo{float: left; line-height: 60px;}
+#logo h1 a{
+  display: none; text-decoration: none;
+  padding-left: 20px; color: rgb(118, 11, 139); 
+  font-style: italic; font-family: Nanum Pen Script;
+  font-size: 1.5em;
+}
 header nav{height: 60px; background-color: black;}
 nav #main-nav{text-align: center;}
 nav #main-nav li{display: inline-block; line-height: 60px;
@@ -19,11 +28,12 @@ nav #main-nav li{display: inline-block; line-height: 60px;
 section{height: 320px; padding: 10px 5%; }
 section:nth-of-type(2n){background-color: #eee;}
 section .page-title{margin: 20px 0;}
-section p{line-height: 3;}
+section h1{margin-bottom: 20px;}
+section p{line-height: 2;}
 section .content .photo{display: none;}
-#choice .content h2{margin-bottom: 20px;}
-#choice .content ol{padding-left: 30px;}
-#choice .content ol li{line-height: 2;}
+#JOB .content h2{margin-bottom: 20px;}
+#JOB .content ul{padding-left: 30px;}
+#JOB .content ul li{line-height: 2;}
 
 /* footer 영역 */
 footer{height: 80px; border-top:2px solid #222;}
@@ -33,6 +43,14 @@ footer{height: 80px; border-top:2px solid #222;}
 #bottom-menu li:last-child{border: none;}   /* 사이트 맵 우측 바 숨기기*/
 #bottom-menu li a{text-decoration: none; color: #444; font-size: 0.8em;}
 
+p#show{
+  margin: 100px 0px;
+  color: #999;
+  float: right;
+}
+
+
+
 @media screen and (min-width: 780px) {
   /* header 영역 */
   header{height: 320px;}
@@ -41,10 +59,10 @@ footer{height: 80px; border-top:2px solid #222;}
 
   /* section 영역 */
   section{width: 100%; height: 380px;}
-  #intro{float: left; width: 50%}
-  #choice{float: right; width: 50%}
-  #map{clear: both;}
-  #map .photo{display: block; float: left; margin-right: 40px;}
+  #WHO{float: left; width: 50%}
+  #JOB{float: right; width: 50%}
+  #SKILL{clear: both;}
+  #SKILL .photo{display: block; float: left; margin-right: 40px;}
   
   /* footer 영역 */
   #bottom-menu{margin: 10px 40px;}
@@ -56,15 +74,21 @@ footer{height: 80px; border-top:2px solid #222;}
 @media screen and (min-width: 1200px) {
   #container{width : 1200px; margin: 0 auto;}
   /* header 영역 */
-  header{height: 380px;}
+  header{height: 320px;}
+  #logo h1 a{
+    display: block;
+  }
   header nav #main-nav li{margin: 0 50px;}
   header main-pic img{height: 320px;}
 
   /* section 영역 */
   section{width: 100%; height: 350px;}
-  #intro, #choice, #map{width:100%;}
+  #WHO, #JOB, #SKILL{width:100%;}
   section .content .photo{display: block;}
-  #intro .photo, #map .photo{float: left; margin-right: 20px;}
-  #choice .photo{float: right; margin-left: 20px;}
-  #choice .content ol li{line-height: 2.5;}
+  #WHO .photo, #map .photo{float: left; margin-right: 20px;}
+  /* #JOB h1{margin: 35px 0px} */
+  #JOB .photo{float: right; margin-left: 20px;}
+  #JOB .content ol li{line-height: 2.5;}
+
+
 }
