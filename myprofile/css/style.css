@@ -40,17 +40,17 @@ footer{height: 80px; border-top:2px solid #222;}
 #bottom-menu{list-style: none; margin: 10px 20px;}
 #bottom-menu li{display: inline-block; margin: 5px 0; padding: 0 5px;
     border-right: 1px solid #ccc;}
-#bottom-menu li:last-child{border: none;}   /* 사이트 맵 우측 바 숨기기*/
-#bottom-menu li a{text-decoration: none; color: #444; font-size: 0.8em;}
+#bottom-menu li:last-child{border: none;}   /* 맨 우측 바 숨기기*/
+#bottom-menu li a{text-decoration: none; color: #444; font-size: 0.8em; line-height: 0.5;}
 
 p#show{
-  margin: 100px 0px;
+  margin: 100px 0px 0px 0px;
   color: #999;
   float: right;
 }
 
 
-
+/* 태블릿 기준 */
 @media screen and (min-width: 780px) {
   /* header 영역 */
   header{height: 320px;}
@@ -58,7 +58,7 @@ p#show{
   header main-pic img{height: 290px;}
 
   /* section 영역 */
-  section{width: 100%; height: 380px;}
+  section{width: 100%; height: 320px;}
   #WHO{float: left; width: 50%}
   #JOB{float: right; width: 50%}
   #SKILL{clear: both;}
@@ -90,5 +90,7 @@ p#show{
   #JOB .photo{float: right; margin-left: 20px;}
   #JOB .content ol li{line-height: 2.5;}
 
-
+  p#show{
+    margin: 130px 0px 0px 0px
+  }
 }
