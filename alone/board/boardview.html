@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>게시글 보기</title>
+  <link rel="stylesheet" href="../resources/css/boardview.css">
+</head>
+<body>
+  <jsp:include page="../header.jsp"/>
+	<div id="topCon">
+	</div>
+	<div id="container">
+    <section id = "main">
+      <div class = "boardName">
+        <h2>여행 후기</h2>
+        <p class="boardInfo">게시판에 맞는 정보를 공유해주세요.</p>
+      </div>
+      <div class = "main">
+        <div class="title">
+          ${board.title}
+        </div>
+        <div class="upper">
+          <div class="thumb"></div>
+          <div class="nickname1">
+            ${board.id}
+          </div>
+          <div class ="update">
+            ${board.createDate}
+          </div>
+          <div class="etc">
+            댓글 : ${reply_count} 개
+          </div>
+        </div>
+        <hr>
+        <div class = "content">
+          ${board.content}
+        </div>
+        <div class = "under">
+          <p><div class="thumb"></div>
+          <div class="nickname2">
+            ${board.id}
+          </div>
+          <div class="likeReply">
+            <p>좋아요 : ${like_count} 개 | 댓글 : ${reply_count} 개</p>
+          </div>
+        </div>
+        <hr>
+        <div class="replyform">
+        <p class="rtitle">댓글</p>
+        <c:forEach items="${replyList }" var="reply">
+          <div class = "reply">
+            <div class = "reThumb"></div>
+            <div class = "replyer">
+              ${reply.replyer}
+            </div>
+            <div class = "rcontent">
+              ${reply.rcontent}
+            </div>
+            <div class = "rdate">
+              ${reply.rdate}
+            </div>
+          </div>
+          </c:forEach>
+        </div>
+      </div>
+    </section>
+    <jsp:include page="../footer.jsp"/>
+	</div>
+	
+</body>
+</html>

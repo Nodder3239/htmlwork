@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'NanumSquareRound';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+*{margin: 0; padding: 0;}
+body {
+	font-family: 'NanumSquareRound', sans-serif;
+  font-size: 1rem;
+}
+ul li{list-style: none;}
+a{text-decoration: none;}
+
+#page{text-align: center; margin-top: 16px;}
+#page .pagination{display:inline-flex;}
+#write{margin-left: 10px;}
+#search{width: 400px; margin: 0 auto;}
+
+ul tr td{border-right: 1px solid #cdcdcd;}
